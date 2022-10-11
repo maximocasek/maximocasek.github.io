@@ -144,9 +144,13 @@ p {
 
 .box i {
     margin-bottom: 10px;
+    color: black;
 }
 
-p1{
+a{
+    color: black;
+}
+h3{
     color: black;
 }
 
