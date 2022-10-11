@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1"/>
+    <title>Kontakty</title>
+    <link rel="stylesheet"
+          href="./css/style.css">
+    <meta name="description" content="Vítejte v nejlepším hotelu Slezska.">
+    <meta name="keywords" content="hotel, opava, severní morava, ubytování">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+<header>
+    <nav id="navbar">
+        <div class="container"><h1 class="logo"><a href="index.html">FCO</a></h1>
+            <ul>
+                <li><a href="index.html">Úvod 🏠</a></li>
+                <li><a href="about.html">O nás 👦</a></li>
+                <li><a class="current" href="contact.html">Kontakt ☎</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="contact-form" class="py-3">
+        <div class="container">
+            <h1 class="1-heading"><span class="text-primary">Kontaktujte</span> nás</h1>
+            <p>Prosím vyplňte krátký formulář:</p>
+            <form action="process.php">
+                <div class="form-group">
+                    <label for="jmeno"></label>
+                    <input placeholder="Jméno a Příjmení" type="text" name="name" id="name"
+                    <div/>
+                    <div class="form-group">
+                        <label for="email"></label>
+                        <input placeholder="Email" type="email" name="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="Něco o vás"></label>
+                        <textarea placeholder="Něco o vás" name="Něco o vás" id="Něco o vás"></textarea>
+                        <div>
+                            <button type="odeslat" class="btn">Odeslat</button>
+            </form>
+        </div>
+    </section>
+    <section id="contact-info" class="bg-dark">
+        <div class="container">
+            <div class="box">
+                <i class="fas fa-hotel fa-3x"></i>
+                <h3>Adresa</h3>
+                <p1>Rybářská 27</p1>
+            </div>
+            <div class="box">
+                <i class="fas fa-phone fa-3x"></i>
+                <h3>Telefon</h3>
+                <p1>951 753 321</p1>
+            </div>
+            <div class="box">
+                <i class="fas fa-envelope fa-3x"></i>
+                <h3>Email</h3>
+                <p1>fotbalovy@klub.cz</p1>
+            </div>
+        </div>
+    </section>
+</header>
+</body>
+</html>
