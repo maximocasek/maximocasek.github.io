@@ -13,7 +13,7 @@
     <title>Fotbal | od A do Z</title></head>
 <body id="home">
 <nav id="navbar">
-    <div id="logo"><span class="text-primary"><i class="fa-solid fa-fotball fa-2x"></i></span><a href="index.html">Vše
+    <div id="logo"><span class="text-primary"><i class="fa-sharp fa-solid fa-futbol"></i></span><a href="index.html">Vše
         <span
                 class="text-primary">o fotbale </span></a></div>
     <ul>
@@ -28,20 +28,20 @@
         <p class="lead">Připravte se porozumět fotbalu. Naučíte se ho možná i hrát díky našim radám.</p>        <a
                 href="#about" class="btn">Chci vědět víc</a></div>
 </div>
-<section id="about" class="bg-light py-1">
+<section id="about" class="bg-light py-2">
     <div class="container"><h2 class="m-heading text-center"><span class="text-primary">Typy</span> fotbalistů</h2>
         <div class="items">
-            <div class="item"><i class="fa-solid fa-fotball fa-2x"></i>
+            <div class="item"><i class="fa-sharp fa-solid fa-user"></i>
                 <div><h3>Profíci</h3>
                     <p>Jsou lidi, kteří se fotbalem z pravidla živí a je to jejich náplň.
                     </p></div>
             </div>
-            <div class="item"><i class="fa-solid fa-fotball fa-2x"></i>
+            <div class="item"><i class="fa-sharp fa-solid fa-user"></i>
                 <div><h3>Amatéři</h3>
                     <p>Lidé kteří, kteří fotbal hrajou ale na úrovni vesnice a hrajou to především pro zábavu.
                     </p></div>
             </div>
-            <div class="item"><i class="fa-solid fa-fotball fa-2x"></i>
+            <div class="item"><i class="fa-sharp fa-solid fa-user"></i>
                 <div><h3>Lidi nehrající fotbal</h3>
                     <p>Lidé, kteří fotbal nehrajou a nevyznají se v něm.
                     </p></div>
@@ -49,5 +49,135 @@
         </div>
     </div>
 </section>
+<section id="project" class="bg-dark">
+    <div class="project-img">Něco napsat</div>
+    <div class="project-text.bg-dark.p-2">
+        <h2 class="m-heading">Projektový <span class="text-primary"> tým</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt dicta, ea eius, eligendi facilis id,
+            nesciunt odio perspiciatis similique tempora vero. A commodi doloremque itaque laborum perferendis voluptas
+            voluptatum.</p>
+        <h3>Seznam</h3>
+        <ul class="list">
+            <li>položka 1</li>
+            <li>položka 1</li>
+            <li>položka 1</li>
+        </ul>
+    </div>
+</section>
+
+<section id="images" class="py-2">
+    <div class="container"><h2 class="m-heading text-center">Ilustrační <span class="text-primary">obrázky</span></h2>
+        <div class="items py-1">
+            <div><img src="https://source.unsplash.com/random/180x300/?football" alt="ilustrační obrázek"></div>
+            <div><img src="https://source.unsplash.com/random/180x300/?football" alt="ilustrační obrázek"></div>
+            <div><img src="https://source.unsplash.com/random/180x300/?football" alt="ilustrační obrázek"></div>
+            <div><img src="https://source.unsplash.com/random/180x300/?football" alt="ilustrační obrázek"></div>
+            <div><img src="https://source.unsplash.com/random/180x300/?football" alt="ilustrační obrázek"></div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="contact-form bg-primary p-2"><h2 class="contact-form bg-primary m-heading">Napište nám</h2>
+        <p>Prosím využijte níže uvedený formulář</p>
+        <form>
+            <div class="form-group"><label for="name">Jméno</label> <input type="text"
+                                                                           name="name"
+                                                                           id="name"
+                                                                           placeholder="jméno a příjmení"></div>
+            <div class="form-group"><label for="email">E-mail</label> <input type="text"
+                                                                             name="email"
+                                                                             id="email"
+                                                                             placeholder="e-mail"></div>
+            <div class="form-group"><label for="phone">Telefon</label> <input type="text"
+                                                                              name="phone"
+                                                                              id="phone"
+                                                                              placeholder="telefon"></div>
+            <div class="form-group"><label for="message">Zpráva</label> <textarea name="message"
+                                                                                  id="message"
+                                                                                  cols="30"
+                                                                                  rows="10"
+                                                                                  placeholder="zpráva"></textarea></div>
+        </form>
+    </div>
+    <div class="contact-adress bg-dark p-2"><h2 class="m-heading">Kontakt</h2>
+        <h3>Adresa Instituce</h3>
+        <ul class="list">
+            <li>pol1</li>
+            <li>pol2</li>
+            <li>pol3</li>
+        </ul>
+        <h3>Email</h3>
+        <ul class="list">
+            <li>email</li>
+        </ul>
+        <h3>Telefon</h3>
+        <ul class="list">
+            <li>telefon</li>
+        </ul>
+    </div>
+</section>
+
+
+<footer id="main-footer" class="bg-dark text-center py-1">
+    <div class="container">
+        <p>Copyright &copy; 2022 OA a SOŠL, Opava p.o.</p>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    // Smooth scrolling
+    $('#navbar a, .btn').on('click', function (event) {
+        if (this.hash !== '') {
+            event.preventDefault();
+            const hash = this.hash;
+            $('html, body').animate(
+                {
+                    scrollTop: $(hash).offset().top - 100
+                }, 800
+            )
+        }
+    })
+
+
+    var nav_sections = $('section');
+    var main_nav = $('#navbar li, .mobile-nav');
+
+    $(window).on('scroll', function () {
+
+        var cur_pos = $(this).scrollTop() + 200;
+
+        // Menu Opacity on scrolling and hidding source
+
+        if (cur_pos > 350) {
+            document.querySelector('#navbar').style.opacity = 0.9;
+            document.querySelector('#showcase .source').style.display = "none";
+        } else {
+            document.querySelector('#navbar').style.opacity = 1;
+            document.querySelector('#showcase .source').style.display = "block";
+        }
+
+        // Navigation active state on scroll
+
+        nav_sections.each(function () {
+            var top = $(this).offset().top,
+                bottom = top + $(this).outerHeight();
+
+            if (cur_pos >= top && cur_pos <= bottom) {
+                if (cur_pos <= bottom) {
+                    main_nav.find('a').removeClass('active');
+                }
+                main_nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+            }
+
+            if (cur_pos < 300) {
+                $("#navbar ul li a").removeClass('active');
+            }
+        });
+    });
+</script>
 </body>
 </html>
