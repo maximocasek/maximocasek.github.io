@@ -179,7 +179,7 @@ a{
     flex:1;
 }
 #project .project-img{
-    background: url("../img/football.jpg")no-repeat;
+    background: url("../img/photo.team.jpg")no-repeat;
 }
 
 #images .items{
@@ -218,3 +218,4 @@ a{
 #contact h3{
     margin-top: 1rem;
 }
+
