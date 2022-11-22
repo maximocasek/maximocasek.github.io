@@ -161,7 +161,6 @@ a{
     flex: 1;
 }
 #about .item{
-    width: 50%;
     text-align: center;
     padding: 1rem;
 }
@@ -219,3 +218,8 @@ a{
     margin-top: 1rem;
 }
 
+
+.main footer{
+    display: flex;
+    height: 400px;
+}
