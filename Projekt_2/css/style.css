@@ -219,7 +219,7 @@ a{
 }
 
 
-.main footer{
+#main-footer{
     display: flex;
     height: 400px;
 }
