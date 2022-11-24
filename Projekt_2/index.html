@@ -14,17 +14,18 @@
     <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 768px)">
     <title>Fotbal | od A do Z</title></head>
 <body id="home">
-<nav id="navbar">
+ <nav id="navbar">
     <div id="logo"><span class="text-primary"><i class="fa-sharp fa-solid fa-futbol"></i></span><a href="index.html">Vše
         <span
                 class="text-primary">o fotbale </span></a></div>
+    <a href="#" id="hambac"><i class="fa fa-bars fa-2x"></i><a>
     <ul>
         <li><a href="#home">Úvod</a></li>
-        <li><a href="#about">Koho ...</a></li>
+        <li><a href="#about">Koho</a></li>
         <li><a href="#project">Co je to fotbal</a></li>
         <li><a href="#contact">Kontakt</a></li>
     </ul>
-</nav>
+ </nav>
 <div id="showcase">
     <div class="showcase-content"><h1 class="l-heading"> Fotbal <br> vše, co potřebujete vědět</h1>
         <p class="lead">Připravte se porozumět fotbalu. Naučíte se ho možná i hrát díky našim radám.</p>        <a
@@ -57,7 +58,7 @@
         <h2 class="m-heading">Projektový <span class="text-primary"> tým</span></h2>
         <p>Nejvíce kluby je v žebříčku zastoupena Anglie. Vedle týmů z Manchesteru se do desítky dostala také Chelsea,
             Liverpool a Arsenal. Jediným zástupcem z Bundesligy je gigant Bayern Mnichov a dá se očekávat, že jeho
-            popularita se současnými úspěchy rapidně poroste.</h3>
+            popularita se současnými úspěchy rapidně poroste.</p>
         <ul class="list">
             <li>Chelsea</li>
             <li>Liverpool</li>
@@ -130,13 +131,23 @@
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>    // Smooth scrolling
+
+$("#navbar #hambac").click(function (){
+    $("#navbar ul").slideToggle("slow")
+});
+
+$("navbar ul").click(function (){
+    $("#navbar ul").hide();
+});
+
+// Smooth scrolling
 $('#navbar a, .btn').on('click', function (event) {
     if (this.hash !== '') {
         event.preventDefault();
         const hash = this.hash;
         $('html, body').animate(
             {
-                scrollTop: $(hash).offset().top - 100
+                scrollTop: $(hash).offset().top - 260
             }, 800
         )
     }

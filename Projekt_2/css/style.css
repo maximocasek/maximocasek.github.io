@@ -121,7 +121,12 @@ a{
     position: -webkit-sticky;
     top: 0;
     z-index:2;
-}
+  }
+
+    #navbar #hambac{
+        display: block;
+    }
+
 #navbar ul{
     display: flex;
     list-style: none;
@@ -227,4 +232,12 @@ a{
 .active{
     background-color: yellow;
     border-radius: 5px;
+}
+
+p{
+    margin: 1rem;
+}
+
+li{
+    margin: 1rem;
 }
