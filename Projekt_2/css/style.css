@@ -47,6 +47,7 @@ body{
     margin-bottom: 0.75rem;
     line-height: 1.1;
     text-align: center;
+    margin-top: 2rem;
 }
 .lead{
     font-size: 1.3rem;
@@ -124,7 +125,7 @@ a{
   }
 
     #navbar #hambac{
-        display: block;
+        display: none;
     }
 
 #navbar ul{

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="cz" style="background-color:#202124;">
+
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Google search</title>
+</head>
+
+<body>
+<header>
+    <div class="header-items">
+        <div class="logo">
+            <img src="img/logo.png" alt="Search logo">
+        </div>
+        <ul class="links">
+            <li>
+                <a href="./">Vyhledávání</a>
+            </li>
+            <li>
+                <a href="images.html">Vyhledávání obrázků</a>
+            </li>
+            <li>
+                <a href="#" class="active">Pokročilé vyhledávání</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <div class="showcase-content">
+        <div class="title">
+            <h1>  <span style='color: blue'>G</span>  <span style='color: red'>o</span>  <span style='color: yellow'>o</span>  <span style='color: blue'>g</span>  <span style='color: green'>l</span>  <span style='color: red'>e</span>
+                <span style='color: blue'>S</span>  <span style='color: red'>e</span>  <span style='color: yellow'>a</span>  <span style='color: blue'>r</span>  <span style='color: green'>c</span>  <span style='color: red'>h</span></h1>
+        </div>
+        <div class="subtitle">
+            <p>Najít další stránky</p>
+        </div>
+        <form action="https://www.google.com/search" name="f">
+            <div class="row with-text">
+                <p>Se všemi těmito slovy:</p>
+                <input type="text" name="as_q" placeholder="Sem napiš hledaný výraz" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            </div>
+            <div class="row with-text">
+                <p>S tímto přesným slovem nebo frázemi:</p>
+                <input type="text" name="as_epq" placeholder="Sem napiš hledaný výraz" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            </div>
+            <div class="row with-text">
+                <p>Na kterých není žádné z těchto slov</p>
+                <input type="text" name="as_eq" placeholder="Sem napiš hledaný výraz" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Pokročilé hledání" name="btnK">
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+
+</html>
