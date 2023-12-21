@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1"/>
+    <title>Kontakty</title>
+    <link rel="stylesheet"
+          href="css/style.css">
+    <meta name="description" content="Vítejte na naší akademii.">
+    <meta name="keywords" content="akademie, opava, severní morava, fotbal">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+</head>
+<body>
+
+<header>
+    <nav id="navbar">
+        <div class="container"><a href="index.html"><img src="./img/Logo-mat.svg" alt="Logo" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Úvod </a></li>
+                <li><a href="about.html">O nás </a></li>
+                <li><a  href="about1.html">Historie </a>
+                <li><a  href="foto.html">Fotogalerie </a></li>
+                <li><a class="current" href="contact.html">Kontakt </a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="contact-form" class="py-3">
+        <div class="container">
+            <h1 class="1-heading"><span class="text-primary">Kontaktujte</span> nás</h1>
+            <p>Prosím vyplňte krátký formulář:</p>
+            <form action="process.php">
+                <div class="form-group">
+                    <label for="name"></label>
+                    <input placeholder="Jméno a Příjmení" type="text" name="name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email"></label>
+                        <input placeholder="Email" type="email" name="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefon"></label>
+                        <input placeholder="Telefon" type="number" name="telefon" id="telefon" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="About"></label>
+                        <textarea placeholder="Něco o vás" name="About" id="About"></textarea>
+                            <input type="submit" class="btn" value="Odeslat">
+                    </div>
+
+            </form>
+            </div>
+    </section>
+    <section id="contact-info" class="bg-dark">
+        <div class="container">
+            <div class="box">
+                <i class="fas fa-hotel fa-3x"></i>
+                <h3>Adresa</h3>
+                <p>Rybářská 27</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-phone fa-3x"></i>
+                <h3>Telefon</h3>
+                <p>951 753 321</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-envelope fa-3x"></i>
+                <h3>Email</h3>
+                <p>fotbalova@akademie.cz</p>
+            </div>
+        </div>
+    </section>
+
+</header>
+<div class="clr">
+    <footer id="main-footer">
+        <p><span class="text-primary">Fotbalová akademie</span></p>
+    </footer>
+</div>
+</body>
+</html>
